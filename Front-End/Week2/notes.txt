@@ -1,1 +1,37 @@
 Lecture notes: May 8,2023 START
+
+HTML:Hyper Text Markup Language - A language to develop/make/write web pages!
+
+Websites: Database of collected info
+          Webpages! digital documents that we can view on the internet!
+
+www.google.com, www.facebook.com | Canada.Ontario.Toronto.Kitchener
+
+The Internet: "Network of Networks" 
+World Wide Web (WWW):  www is like a virtual directory or a place where websites/digital documents      reside. Also, it gives us the way to access those websites/document by using "PROTOCOLS".
+
+Protocols: Rules for communication over the www. WWW is not Internet! And Internet is not WWW.
+
+HTTP: Hyper Text Transfer Protocol: http://    https:// [secure]
+URL: Uniform Resource Locator! Address of a website
+
+https://www.youtube.com/watch?v=82m2du-zgmY
+
+Port:   http:// 80
+        https:// 443
+
+Protocol + domain + port  = origin
+
+ORIGIN: It plays a central role in the web's security model - By looking at "origin" the systems recognizes that the resource is a secure one
+
+https://  .youtube.com:443
+
+IP: Internet Protocol: IP Address: 127.0.0.1
+
+127.0.0.1 | LocalHost/loopback ping/ HOME
+
+There is no place on earth like "127.0.0.1"!
+
+Extensions in VSC: 
+1. Live Server?
+2. Prettier
