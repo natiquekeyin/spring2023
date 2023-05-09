@@ -1,2 +1,65 @@
-Week2 notes!
-Start!
+Submission of Assignments:
+
+frank_practice1 | Name of the folder
+frank_qap1
+
+yourFirstName_assignmentName [ frank_qap2]
+
+NO SPACES IN THE NAME OF THE FOLDER : IMPORTANT!!!
+
+camelCase?? snake_case ?? PascalCase ?? kebab-case [css: background-color:blue]
+
+holloway_practice1
+Davies_practice1
+
+ALWAYS WRITE YOUR NAME, DATE, ASSIGNEMNT NAME ON TOP OF THE FILE LIKE FOLLOWING:
+
+<!--  Developer Name: Evan Holloway  Date: May 9,2023 Assignemnt: QAP1      -->
+
+/*  Developer Name: Evan Holloway  Date: May 9,2023 Assignemnt: QAP1     */
+
+ALWAYS VALIDATE YOUR HTML FILE BEFORE SUBMISSION...
+
+
+Week2 notes! JavaScript 
+
+DOM PROGRAMMING:
+
+HTML -> DOM <- JS!
+
+DOM: Document Object Model
+
+is an API (Application Programming Interface) [ a piece of software that enables different softwares to talk to each other]
+
+DOM is an API that enables HTML to talk to JS and vice versa![HTML & JS Communcation!]
+
+Valid HTML Document?
+
+DOM Tree:
+The html document is represented as an upside down tree (DOM_TREE.jpg). The top NODE is called "root element" and rest all nodes are childs of root node... 
+In DOM Tree every element of HTML represent one "NODE" ...
+And the text section inside nodes is called "Text Node"....
+
+SO, document is the main object that deals with the "DOM tree" and enables us to manipulate the different elements of our html document.
+
+var myTitle = document.title;
+
+This will define a variable "myTitle" and store the current title of the document inside it....
+
+Programming the DOM:
+
+Web pages are dynamic:they can change in response to user actions, different data, JavaScript code etc.
+Where HTML defines the initial structure of the page, the DOM is the current or actual content of the page as its exists right now in browser...
+
+The DOM is a programming interface(ie. set of Objects, fucntions, properties) allowing scripts to interact with and modify documents (html). 
+
+Strings in JavaScript:
+
+"hello" ...
+'hello' ...
+`hello` ...
+
+
+
+
+
