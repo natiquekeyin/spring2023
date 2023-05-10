@@ -19,6 +19,7 @@ https://www.youtube.com/watch?v=82m2du-zgmY
 
 Port:   http:// 80
         https:// 443
+ In general, the computer has 65535 ports..
 
 Protocol + domain + port  = origin
 
@@ -34,4 +35,63 @@ There is no place on earth like "127.0.0.1"!
 
 Extensions in VSC: 
 1. Live Server?
-2. Prettier
+2. Prettier?
+
+Lecture of May 10,2023
+
+query string: is added to the URL of a website as additional parameters sent to the servers...
+ on wikipedia we applied ?useskin=modern.. changed the skin of the page...
+ query string to get some particular data..etc...
+
+"If someone is trying to access a resource and they are getting 500 error. What might be an issue here?"
+Server Problem..
+
+
+ Request Response Model:
+
+ When clients asks for a resource they are making "REQUEST"
+ When server sends back the data it is called "RESPONSE"...
+
+ HTML:
+ 1. tag | special text wrapped in < and > characters... <img>, <a> , <p>
+
+ 2. element | everything from opening tag to the closing tag, <h1>Hello</h1>, <div><h1>Something</h1><p>Hello</p></div> | <meta/> [empty element- it does not have an contents.], <br/>, <hr/>, <img/>
+
+ 3. attribute | optional characteristics of an element.. <p id="point1"> Hello</p> | extra functionality of an element...
+
+ 4. entity | a special text or symbols that begin with & and end with ;
+
+ &lt; Less than
+ &gt; Greater than..
+
+ 
+ Syntatic element:
+ <html>
+ <head>
+ <title> Hello</title>
+ </head>
+ <body>
+ </body>
+ </html>
+ <form></form>
+ <table></table>
+ <h1>..</h1>
+ 
+ Semantic Elements: Screen Readers or other devices that want to read the contents of my webpage.. Accessibilty elements.
+
+ <header> </header>
+ <nav> </nav>
+ <main> </main>
+ <footer> </footer>
+ <section></section>
+ <figure></figure>
+ <aside></aside>
+ <h1>..</h1>
+ <h2>..</h2>
+
+<b> Bold text </b>
+<i> Italic text </i>
+<strong> Bold Text </strong>
+<em> Italic Text </em>
+
+
