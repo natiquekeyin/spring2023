@@ -46,18 +46,59 @@ var myTitle = document.title;
 
 This will define a variable "myTitle" and store the current title of the document inside it....
 
-Programming the DOM:
-
-Web pages are dynamic:they can change in response to user actions, different data, JavaScript code etc.
-Where HTML defines the initial structure of the page, the DOM is the current or actual content of the page as its exists right now in browser...
-
-The DOM is a programming interface(ie. set of Objects, fucntions, properties) allowing scripts to interact with and modify documents (html). 
-
 Strings in JavaScript:
 
 "hello" ...
 'hello' ...
 `hello` ...
+---------------------------------------------------------------
+Lecture May 10,2023
+
+var links;
+links = document.links;
+
+
+Programming the DOM:
+
+Web pages are dynamic:they can change in response to user actions, different data, JavaScript code etc.
+Where HTML defines the initial structure of the page, the DOM is the current or actual content of the page as its exists right now in browser...
+
+The DOM is a programming interface(ie. set of Objects, functions, properties) allowing scripts to interact with and modify documents (html). 
+
+Tasks in DOM:
+1. Finding and getting references to elements in the page
+2. Creating, Adding, and removing elements from DOM Tree.
+3. Inspecting and modifying elements and their contents.
+4. Run code in response to events triggered by the user, browser, or other parts of our code.
+
+1. Finding elements in the DOM with JavaScript:
+ we can directly find some special sections of the html document like ...
+    document.head
+    document.title
+    document.links
+    document.images
+
+Methods: 
+ i) getElementById(id) returns an element whose id attribute/property has the given id string...
+
+ ii) querySelector(selectors) 
+ iii) querySelectorAll(selectors):
+ similar to getElementById, but also allows querying the DOM using CSS selectors for an element that does not have a unique id...
+
+  a) tag selector [ a{color:blue} ]
+  document.querySelector("h1");
+  b) id selector [ #p2{color:red} ]
+  document.querySelector("#link2");
+  c) class selector [ .demo{color:green}]
+    document.querySelector(".demo");
+    
+
+2. Creating elements and Modifying the DOM with JavaScript:
+
+    i) document.createElement(name) - creates and returns a new element of the type specified by the "name"
+    ii) document.createTextNode(text) - creates a text node (the text withing an element vs the element itself)
+    
+
 
 
 
