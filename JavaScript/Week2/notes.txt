@@ -97,10 +97,46 @@ Methods:
 
     i) document.createElement(name) - creates and returns a new element of the type specified by the "name"
     ii) document.createTextNode(text) - creates a text node (the text withing an element vs the element itself)
+
+    --------------------------------
+
+
+    Lecture May 11,2023
+
+After creating a new element: following are the properties that we can set up...
+
+    innerText:Considers everything as text (regardless if there are any elements..)
+    innerHTML: It renders all the html elements given in the value of it...
     
 
+3. Inspecting and modifying elements and their contents:
+    Once we have a reference to an element in javascript, we can use a number of properites and methods to work with it...
 
+    i)element.id:
+    ii)element.innerHTML:
+    iii)element.parentNode:
+    iv)element.nextSibling:
+    v)element.className:
+    vi)element.innerText:
 
+4. Run code in response to events triggered by the user, browser, or other parts of our code:
+Events? 
+    i) user clicks a button
+    ii) moving the mouse
+    iii) pressing a key
+    iv) changing tabs in browser
+    v) Timers, message from a background process, report from a sensors..
+
+Event Drive Programming:
+
+There will be some event handlers, that will handle and run the respective code when some event occurs
+
+e.g: events are like light switches flipping a light switch on or off triggers and action in the light fixture...
+
+We can register a DOM event handler for a given event in one of two ways:
+
+1. element.onevent = function(){ }
+2. element.addEventListener('event', function(){ });
 
 
 
