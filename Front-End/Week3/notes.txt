@@ -1,0 +1,13 @@
+Lecture May 15,2023:
+
+A document having most of the syntactic elements:
+
+i)Absoulte and relative paths??
+Absolute path! The complete path...
+Relative path! Relative to current working directory
+
+./  current directory
+../ parent directory....
+
+<video>..</video>
+<audio>...</audio> Leave that :)
