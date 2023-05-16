@@ -1,0 +1,19 @@
+Lecture May 16,2023
+Continuing the DOM and make a project:
+
+1. Practice some more interesting stuff related to Events:
+2. Start a project
+
+Pre-cooked CSSs:
+1. Skeleton CSS
+2. Water CSS
+3. Bootstrap CSS (Later in CSS)
+
+Events are propagated to the parents of the elements.
+
+to stop propagation we use evt.stopPropagation()...
+
+evt.preventDefault(); //to prevent event from doing its default behavior...
+
+Arrays:??
+
