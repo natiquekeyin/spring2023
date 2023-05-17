@@ -5,16 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Week 3</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
+      integrity="sha512-EZLkOqwILORob+p0BXZc+Vm3RgJBOe1Iq/0fiI7r/wJgzOFZMlsqTa29UEl6v6U6gsV4uIpsNZoV32YZqrCRCQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
-    <h1>Main Title of the document</h1>
+    <h1 id="top">Main Title of the document</h1>
+
+    <h2>Links - inline element example</h2>
+    <a href="./pages/contact.html">Contact</a> <a href="#vd">go to vidoes</a>
+    <img src="./images/abc.jpg" alt="" width="100" />Hello picture...
     <h2>Date & Time</h2>
     <time> 2023-05-15</time> <br />
     <time datetime="2023-05-14">Yesterday</time> <br />
     <time datetime="2023-05-16 17:00">Tomorrow at 5 pm</time>
 
     <h2>Address</h2>
-    <address>104 Topsail Road, Saint John's, NL A1C4F1</address>
+    <address>
+      104 Topsail <span id="rd">Road</span> , Saint John's, NL A1C4F1
+    </address>
 
     <h2>Code</h2>
     <code>printf("%d",x);</code>
@@ -76,7 +89,7 @@
 
     <img src="./images/abc.jpg" alt="" width="300" />
 
-    <h3>Video</h3>
+    <h3 id="vd">Video</h3>
     <video
       src="./videos/The Pink Panther Show Episode 24 - Rock A Bye Pinky.mp4"
       width="300"
@@ -92,7 +105,12 @@
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
       allowfullscreen
     ></iframe>
+    <a href="#top">[top]</a>
 
     <h3>Audio</h3>
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam
+    obcaecati ut totam vel, quisquam voluptatibus sequi explicabo <br /><br />br
+    asperiores fugit, eos quasi aut impedit corrupti doloremque. Dolore
+    similique repellat at ab.
   </body>
 </html>

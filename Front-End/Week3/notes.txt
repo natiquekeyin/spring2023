@@ -11,3 +11,16 @@ Relative path! Relative to current working directory
 
 <video>..</video>
 <audio>...</audio> Leave that :)
+
+Lecture May 17,2023
+
+Squoosh.app for compressing the images...
+webp, avif!
+
+Block Level and Inline Elements:
+Block level that occupy a block and don't allow anything to run after them...
+Inline elements become part of the line where they are used.. and allow contents on either side ofthem...
+
+Generic Containers:
+<div>...</div> block level container
+<span>...</span> inline level container
