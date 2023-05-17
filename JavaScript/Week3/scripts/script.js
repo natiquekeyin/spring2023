@@ -39,3 +39,21 @@ body.addEventListener("click", function (evt) {
   var y = document.querySelector("#yPos");
   y.innerHTML = "<strong>" + evt.clientY + "</strong>";
 });
+
+// Loading urls in an ordered list and displaying in the urls...
+
+var loadBtn = document.querySelector("#load");
+
+loadBtn.addEventListener("click", function (e) {
+  var ol = document.createElement("ol");
+  // ol.innerHTML = `<li>${trees[1]}</li>`;
+
+  trees.forEach(function (value) {
+    var li = document.createElement("li");
+    li.innerHTML = `<a href=" ${value}">${value}</a>`;
+
+    ol.appendChild(li);
+  });
+
+  document.querySelector("#urls").appendChild(ol);
+});
