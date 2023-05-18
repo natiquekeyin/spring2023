@@ -24,3 +24,5 @@ Inline elements become part of the line where they are used.. and allow contents
 Generic Containers:
 <div>...</div> block level container
 <span>...</span> inline level container
+
+All semantic elements like <header></header>, <main></main>..<footer></footer> WILL ALWAYS ALWAYS ALWAYS GO inside <body> element NEVER OUTSIDE OF IT.....
