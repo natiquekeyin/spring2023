@@ -17,3 +17,6 @@ evt.preventDefault(); //to prevent event from doing its default behavior...
 
 Arrays:??
 
+setTimeout()
+
+

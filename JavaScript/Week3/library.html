@@ -12,12 +12,28 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <style>
+      .error,
+      .success {
+        color: white;
+      }
+
+      .error {
+        background-color: red;
+      }
+
+      .success {
+        background-color: green;
+      }
+    </style>
   </head>
   <body>
     <div class="container">
       <h1>Library Project</h1>
       <h2>Add Book</h2>
-
+      <span id="popup">
+        <!-- <p>No filed should be empty</p> -->
+      </span>
       <form id="book-form">
         <div>
           <label for="title">Title</label>
@@ -47,9 +63,14 @@
             </tr>
           </thead>
           <tbody id="tbody">
-            <!-- <tr>
-                <td>Java</td>
-                        </tr> -->
+            <!-- 
+            <tr>
+              <td>t</td>
+              <td>a</td>
+              <td>i</td>
+            </tr>
+
+            -->
           </tbody>
         </table>
       </section>
