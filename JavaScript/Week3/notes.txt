@@ -17,6 +17,9 @@ evt.preventDefault(); //to prevent event from doing its default behavior...
 
 Arrays:??
 
-setTimeout()
+WEEK4: Continuing...
+Lecture May 23,2023
+
+setTimeout() actually runs a function after a specific set time...
 
 
