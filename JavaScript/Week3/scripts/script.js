@@ -57,3 +57,7 @@ loadBtn.addEventListener("click", function (e) {
 
   document.querySelector("#urls").appendChild(ol);
 });
+
+setInterval(function () {
+  pic.src = nextUrl();
+}, 3000);
