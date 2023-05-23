@@ -22,4 +22,6 @@ Lecture May 23,2023
 
 setTimeout() actually runs a function after a specific set time...
 
+setInterval() runs a function everytime the give time elapsed...
+
 
