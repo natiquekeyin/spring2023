@@ -1,0 +1,48 @@
+/* h1 {
+  color: pink;
+  font-size: 50px;
+}
+
+p {
+  color: green;
+  border: 1px solid red;
+  font-size: 20px;
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#some {
+  border: 5px solid green;
+  padding: 10px;
+  width: 200px;
+}
+
+p {
+  border: 10px solid green;
+  padding: 20px;
+  width: 200px;
+}
+
+#menu {
+  margin-top: 20px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#m1 {
+  border: 1px solid green;
+  flex: 1;
+}
+#m2 {
+  border: 1px solid green;
+  flex: 1;
+}
+#m3 {
+  border: 1px solid green;
+  flex: 1;
+}

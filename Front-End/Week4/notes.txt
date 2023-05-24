@@ -1,0 +1,48 @@
+HTML5 (current version) -- Before HTML5, html also used to give some stylings...
+HTML5 .. Now onwards NO styling will be done by HTML.. CSS
+
+CSS: Cascading Style Sheets
+A way to design the web pages...
+
+CSS Syntax:
+    CSS rules are made up of two things:
+    1. A selector,specifying the elements that should have rules applied to them...
+    2. one or more declarations, which are key value pairs.
+
+    h1{
+        color:blue;
+        font-size:12px;
+    }
+Types of selectors:
+    1.Tag selectors
+    2.Class selectors
+    3.ID selectors
+    4.Contextual selectors:When we want specifically defined element to adapt style...
+    5.Grouping Selectors
+
+    Example of contextual selectors:
+    div h1{
+  color:red;
+}
+
+div p{
+  color:green;
+}
+
+user agent is another name of Web Browser!
+
+Where to put CSS?
+    1. Inline Stylesheet- style defined within the element...
+    2. Internal Stylesheet- define style element in the head section of the document...
+    3. External Stylesheet
+    4. Browser Styles (default styles)
+
+
+CSS BOX MODEL:
+    1.content
+    2.padding - space between border and content
+    3.border - shows an outline
+    4.margin- the space between the elements
+
+Flexbox model:
+  Flexbox froggy! Try to reach level 24
