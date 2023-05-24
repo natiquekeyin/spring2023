@@ -1,0 +1,42 @@
+Object Oriented Programming(OOP):
+    A programming paradigm that considers everything as an "object" and works with it...
+Objects:
+    Objects have 2 things:
+        i)properties - data
+        ii) behaviors - functions
+
+        Car is an object
+            i) model, color, brand,..
+            ii) accelerates, stops, turns
+        Account is an object
+            i) account_no, account_title..etc..
+            ii) withdrawal,depositing,...
+        Baby is an object
+            i) name, hands, legs...
+            ii) cries, sleeps, 
+
+Class:
+    A template that is used to create "objects"...
+    Code & Data...
+    Class itself can't be used, rather we make "objects" to work with class...
+
+
+// let's create a class "Student"
+class Student {
+  //  constructor - a special function to create objects...
+
+  constructor(fName, lName, age) {
+    this.firstName = fName; //this means "ownself" the object in consideration
+    this.lName = lName;
+    this.age = age;
+  }
+}
+// a constructor function is automatically called at the time of creation of an object...
+
+// to create object of the class...
+
+var st1 = new Student("Alan", "Smith", 24);
+var st2 = new Student("Bob", "Smith", 28);
+var st3 = new Student("Christina");
+
+console.log(st3);
