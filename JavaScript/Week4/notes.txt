@@ -40,3 +40,31 @@ var st2 = new Student("Bob", "Smith", 28);
 var st3 = new Student("Christina");
 
 console.log(st3);
+
+Lecture May 29,2023
+
+A class is not useful unless we create object of it....
+We cannot access anything of a class unless we create object of it....
+
+"static" resources!
+
+A static resource can be accessed without creating object of the class...
+
+A static resource is not "object" level, rather it is "class" level...
+
+For example: Book.abc() will work...
+but book.abc() ...can't access with object...
+
+The api to access the browser memory is "localStorage"...?built-in class or library...that we can access the browser memory...
+
+JSON..."title":"JavaScript";
+
+
+
+
+
+
+
+
+
+
