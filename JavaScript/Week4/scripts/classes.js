@@ -74,6 +74,7 @@ document.querySelector("#book-list").addEventListener("click", function (evt) {
   var book = new Book();
   //Book.abc(); //NOT object level .. a class level .. DIRECTLY with the class name...
   book.deleteBook(evt.target);
+  Store.removeBook(evt.target.parentElement.previousElementSibling.innerText);
   evt.preventDefault();
 });
 
@@ -117,7 +118,17 @@ class Store {
     });
   }
 
-  static removeBook() {}
+  static removeBook(isbn) {
+    var books = Store.getBooks();
+
+    books.forEach((book, index) => {
+      if (book.isbn === isbn) {
+        books.splice(index, 1);
+      }
+    });
+    // update the local storage with new array with one element deleted...
+    localStorage.setItem("books", JSON.stringify(books));
+  }
 }
 
 document.addEventListener("DOMContentLoaded", Store.displayBooks);

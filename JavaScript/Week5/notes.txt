@@ -1,0 +1,18 @@
+AJAX:
+Promises?
+XMLHTTPRequest?
+Fetch API...?
+Async/Await...?
+
+ASYNCHRONOUS JAVASCRIPT:
+
+We want that our main working/screens/UI should not be effected while there is some intensive processing going on...
+
+Sometimes we want to wait until some background intensive processing is happening before going to the next step..
+
+XmlHttpRequest(XHR) Object
+    API in the form of an object..
+    Provided by the browsers...
+    Methods to transfer data between client /servers..
+    All communication in background..withou "REQUESTING" server over and over...
+    Work with data other then XML (JSON, plain text)...
