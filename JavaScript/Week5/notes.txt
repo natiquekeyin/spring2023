@@ -16,3 +16,17 @@ XmlHttpRequest(XHR) Object
     Methods to transfer data between client /servers..
     All communication in background..withou "REQUESTING" server over and over...
     Work with data other then XML (JSON, plain text)...
+API (application programming interfaces) that provide some end points where we can go and read data from...
+
+
+Promises in JavaScript:
+ If I promise to take a review session on Friday.
+ There are two possibilities...
+    i)I take the session (promise fulfilled)
+    ii) I don't take the session (promise rejected)
+
+In JS, a promise is a special statement that is either "resolve" or "reject"...
+
+
+
+

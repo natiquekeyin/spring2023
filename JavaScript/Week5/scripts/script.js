@@ -47,3 +47,59 @@ function loadJSON() {
 
   xhr.send();
 }
+
+document.querySelector("#btn3").addEventListener("click", loadJSONS);
+
+function loadJSONS() {
+  const xhr = new XMLHttpRequest();
+
+  xhr.open("GET", "./data/customers.json");
+
+  xhr.onload = function () {
+    if (this.status === 200) {
+      var customers = JSON.parse(this.responseText);
+
+      var output = "";
+      customers.forEach((customer) => {
+        output += `<ul>
+        <li>ID:${customer.id}</li><li>Name:${customer.name}</li><li>Email:${customer.email}</li></ul>`;
+      });
+
+      document.querySelector("#output").innerHTML = output;
+    }
+  };
+
+  xhr.send();
+}
+
+// Get API Data...
+
+document.querySelector("#btn4").addEventListener("click", loadAPI);
+
+function loadAPI() {
+  const xhr = new XMLHttpRequest();
+
+  xhr.open("GET", "https://reqres.in/api/users");
+
+  xhr.onload = function () {
+    if (this.status === 200) {
+      var users = JSON.parse(this.responseText);
+
+      console.log(users);
+      var output = "";
+      users.data.forEach((user) => {
+        output += `<div class="profile">
+
+       <img src = "${user.avatar}" alt="pic"  class="profile-pic"/> <br>
+        ID:<a href="#"> ${user.first_name + user.last_name}</a> <br>
+        Email:${user.email} <br>
+        
+        </div>`;
+      });
+
+      document.querySelector("#output").innerHTML = output;
+    }
+  };
+
+  xhr.send();
+}
