@@ -1,0 +1,28 @@
+REACT:
+
+    1)MEAN[MongoDB ExpressJS AngularJS NodeJS]
+    2)MERN[MongoDB ExpressJS ReactJS NodeJS]
+
+    MongoDB: is the database part, that can store all the related data of a web application
+
+    ExpressJS: is responsible for settting up the "servers"..i)Static Website, ii)Dynamic Websites...
+        i)static websites: That show same content to every user ...HTML,CSS,JS ...www.myresume.com[index.html,style.css]...that will always show my static page that contains my resume.."client side scripts"
+        ii) dynamic websites: that show different contents to different users...Weather website...Hockey game 0 1 ...2 3...facebook.com.. if enter my user name and id .. I will get my feeds..[ASP.net,PHP,JSP(Java Server Pages) were server side technologies.."JAVASCRIPT"]
+        "server side script".. EXPRESS JS...
+    NodeJS: is the runtime that allows JavaScript do wonders...
+        that enables JS to run NOT ONLY on client side BUT ALSO on servers as well on Console Based applications...[JS was primarily ONLY client side scripting language when it was born..with "NODEJS", first we got the ability to use JS to create Servers...] [JS was primarily ONLY FOR web development, BUT NodeJS enable JS to work on "Console Based" applicaitons... means desktop based applications...]
+
+    Angular:
+    React:[UI] A front-end library that enables developers to create HIGHLY responsive and intuitive User Interfaces suitable for all types of devices....Front-end HTML, CSS, JS...are the basis to learn React...
+
+    Full Stack Developer! React...
+    Express, MongoDB, NodeJS
+
+    index.html,contact.html,about.html,history.html,products.html,purchase.html....
+
+REACT:
+    A front-end library that enables developers to create HIGHLY responsive and intuitive User Interfaces(UIs) suitable for all types of devices.
+    SPA: Single Page Applications:We only have one page in React app..."index.html"... 
+    Components: Are reusable elements that can load themselves with new contents WITHOUT requesting servers over and over....
+
+How to make and run React app!
