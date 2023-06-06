@@ -28,3 +28,59 @@ REACT:
 How to make and run React app!
 
 NEVER SEND NODE_MODULES FOLDER TO ME IN ANY SUBMISSION...
+
+Lecture June 6,2023:
+
+NEVER FORGET TO SEND "package.json" IN YOUR SUBMISSION...
+THIS "package.json" file is used to install or get access to all libraries and files that we need to run a project with...
+
+1. public/index.html:
+    This is the "SP" that runs when a react application runs...
+    It only has <div id="root"> </div>....and everythingn that we see is somehow injected here....
+2. src/index.js:
+    This is a file that takes hold of "root" area of index.html and creates a root element in ReactDOM[a virtual DOM that react creates for its applications...] and renders the "<App/> ... COMPONENT".. into that area...
+3. src/App.js:
+    App is a "component".. a very important or "main" component that runs when react applciation runs....
+
+N.B: Every component should start with a capital letter..
+
+Components:
+    Reusable areas that can be loaded with different data..without requesting the server...
+    App is the main component in react applciations...
+    We can make our own components are run insdie App component...
+
+    ALL Components return "JSX" which is a combination of "HTML","CSS" and "JAVASCRIPT"...
+
+    They are just like normal functions, BUT they return JSX...
+
+    JSX is the combination of HTML,CSS and JavaScript...
+    Types of Components:
+        1.Class Components
+        2.Function Components.
+
+
+Function Components:
+
+import logo from "./logo.svg";
+import "./App.css";
+
+function App() {
+  var fname = "Alan";
+  var age = 20;
+  return (
+    <div className="App">
+      <h1>My First Application - {fname.toUpperCase()}</h1>
+      <p>React is fun to learn!!!!and you are {age} years old!!</p>
+    </div>
+  );
+  // the above all is "jsx.."
+}
+
+export default App;
+
+
+Fragments in React:
+<> </>
+This is called fragment in react.. it wraps around all the "JSX" to make it in one container...THEY DONOT PRODUCE ANY CODE...
+
+SO, the jsx should be wrapped in a single container..be it a <div></div> OR a fragment....
