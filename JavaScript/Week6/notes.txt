@@ -84,3 +84,67 @@ Fragments in React:
 This is called fragment in react.. it wraps around all the "JSX" to make it in one container...THEY DONOT PRODUCE ANY CODE...
 
 SO, the jsx should be wrapped in a single container..be it a <div></div> OR a fragment....
+
+Lecture June 7,2023 Part 1
+
+Making our own components:
+After making component, we first import it at the top, and then we can call it with element like syntax like <Header/>..
+
+props (properties):
+    are like arguments to the functions...
+    They are passed to the components and components receive them and use the values...
+
+    abc(a,b) a, b are called parameters..
+    abc(4,5) -> 
+
+
+    Ways to access props:
+    1) 
+    function Header(props) {
+  var t = props.title;
+  var b = props.body;
+  return (
+    <>
+      <div>
+        <p>{t}</p>
+        <h1>Header</h1>
+        <p>I am Header Component- {b}</p>
+      </div>
+    </>
+  );
+}
+
+export default Header;
+
+2) 
+function Header(props) {
+  var { title, body } = props;
+  return (
+    <>
+      <div>
+        <p>{title}</p>
+        <h1>Header</h1>
+        <p>I am Header Component- {body}</p>
+      </div>
+    </>
+  );
+}
+
+3)
+
+function Header({ title, body }) {
+  return (
+    <>
+      <div>
+        <p>{title}</p>
+        <h1>Header</h1>
+        <p>I am Header Component- {body}</p>
+      </div>
+    </>
+  );
+}
+
+export default Header;
+
+DEFAULT PROPS:
+In case if no props are passed, we use defaultProps to fill in the place of props...
