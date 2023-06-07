@@ -148,3 +148,16 @@ export default Header;
 
 DEFAULT PROPS:
 In case if no props are passed, we use defaultProps to fill in the place of props...
+
+PART 2 - JUNE 7
+
+.isRequired with props make them compulsory to be sent by the calling party...
+
+Apply Styling to the elements:
+use this syntax:
+
+<h1 style={{backgroundColor:'black'}}>
+</h1>
+
+In normal CSS we have 
+background-color:'black';
