@@ -1,11 +1,13 @@
 import "./App.css";
 import Header from "./components/Header";
+import Tasks from "./components/Tasks";
 
 function App() {
   return (
     <>
       <div className="container">
-        <Header title="First" body="Some text in First header" />
+        <Header title="Todo List" />
+        <Tasks />
       </div>
     </>
   );

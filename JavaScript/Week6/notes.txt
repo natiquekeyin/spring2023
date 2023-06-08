@@ -161,3 +161,23 @@ use this syntax:
 
 In normal CSS we have 
 background-color:'black';
+
+
+Lecture of June 8:
+
+npm: node package manager...
+
+Let's create a component "Button"...why? because we can pass the text and color for different options and it will display button accordingly...
+
+Events:
+onClick();
+
+WHAT ARE CLASS COMPONENTS?
+
+Class components are like function components with following properties...
+Each class component is actually a child of "Component"[a default parent class defined in react for creating child compoents..].. the class component has a render() method that actually returns the JSX code....
+
+The class component has something called "State"....by state we mean... the values in variables of the class at a particular time...
+
+state variables can be defined in the constructor of the class after calling super() constructor of "Component" class...Next week..discuss!
+
