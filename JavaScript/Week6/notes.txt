@@ -181,3 +181,66 @@ The class component has something called "State"....by state we mean... the valu
 
 state variables can be defined in the constructor of the class after calling super() constructor of "Component" class...Next week..discuss!
 
+Lecture of June 12,2023:
+
+Hooks in React:
+
+Hooks in function components are what state variables are in class component...
+Hooks are the way to mantain data ("state") of a function component...
+
+Hooks are the "proper" way of defining variables in a function component...
+
+What is a Hook?
+Hooks allow us to "hook" into React features such as state and lifecycle methods.
+
+1. useState() hook:
+  defines a state variable, and provides us a function to change/update the state variable...
+   i)import {useState} from "react";
+  ii) const [x, setX] = useState(0); // useState defines a variable "x" and sets up the value given as a parameter as the default valure of the variable and also returns a function "setX" that can be used to change/udpate the value of "x"....
+
+  Initialize useState
+We initialize our state by calling useState in our function component.
+
+useState accepts an initial state and returns two values:
+
+The current state.
+A function that updates the state.
+
+const[x,setX] = useState(0);
+
+<h2>{x}</h2>
+      <button onClick={() => setX(x + 1)}>Increment X</button>
+
+<h2>
+        {myArray[0]} - {name}
+      </h2>
+      <button onClick={() => myArray[1]("Bob")}> Change</button>
+      <button onClick={() => setName("Christina")}> Change Name</button>
+
+
+      const [num, setNum] = useState(0);
+  const [name, setName] = useState("John");
+
+  let changeState = () => {
+    setName("David");
+  };
+
+  let changeNum = () => {
+    setNum(num + 1);
+  };
+
+
+  <h3>{name}</h3>
+      <button onClick={changeState}>Update</button>
+      <p>You clicked the change button {num} times</p>
+      <button onClick={changeNum}>Change</button>
+
+
+      const[person,setPerson]=useState({name:"Alan",age:23...})
+
+      ... spread operator:
+
+      ...previousState means... spread or read all the state values which are available...
+      return{
+        ...previousState,name:"Bob"
+      }
