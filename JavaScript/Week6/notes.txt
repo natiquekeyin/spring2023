@@ -244,3 +244,10 @@ const[x,setX] = useState(0);
       return{
         ...previousState,name:"Bob"
       }
+
+
+Lecture June 13,2023:
+
+States can be maintained in any of the components by using "Redux"...(NOT IN OUR DISCUSSION)
+
+Let's use some ICONS... React-icons...

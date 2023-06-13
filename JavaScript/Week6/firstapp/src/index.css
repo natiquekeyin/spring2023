@@ -45,3 +45,12 @@ body {
 .btn:active {
   transform: scale(0.98);
 }
+
+.task {
+  background-color: #f4f4f4;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  color: black;
+  font-weight: 500;
+}
