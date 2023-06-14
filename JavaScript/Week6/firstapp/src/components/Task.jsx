@@ -1,15 +1,20 @@
-import { FaDailymotion } from "react-icons/fa";
-import { MdAddCard } from "react-icons/md";
-import { BiBasket } from "react-icons/bi";
+import { FaTimes } from "react-icons/fa";
 
-const Task = ({ task }) => {
+const Task = ({ task, onDelete, onToggle }) => {
   return (
-    <div className="task">
-      <p>
-        <MdAddCard style={{ color: "red" }} />
-        {task.text}
-        <BiBasket style={{ color: "green" }} />
-      </p>
+    <div
+      className="task"
+      onClick={() => {
+        onToggle(task.id);
+      }}
+    >
+      <h4>
+        {task.text}{" "}
+        <FaTimes
+          style={{ color: "red", cursor: "pointer" }}
+          onClick={() => onDelete(task.id)}
+        />
+      </h4>
     </div>
   );
 };

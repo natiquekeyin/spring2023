@@ -251,3 +251,9 @@ Lecture June 13,2023:
 States can be maintained in any of the components by using "Redux"...(NOT IN OUR DISCUSSION)
 
 Let's use some ICONS... React-icons...
+
+Lecture June 14,2023
+
+To implement functions:
+  i) Delete Task functions...
+  ii) Toggling the reminder ..

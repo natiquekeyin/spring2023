@@ -54,3 +54,13 @@ body {
   color: black;
   font-weight: 500;
 }
+
+.task h4 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task.reminder {
+  border-left: 5px solid green;
+}
