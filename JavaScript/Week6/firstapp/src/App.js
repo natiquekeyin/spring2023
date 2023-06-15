@@ -2,7 +2,8 @@ import "./App.css";
 import Header from "./components/Header";
 import Tasks from "./components/Tasks";
 import AddTask from "./components/AddTask";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import Hooks from "./components/Hooks";
 function App() {
   const [tasks, setTasks] = useState([
     { id: 1, text: "Groceries", day: "June 9th at 1:00pm", reminder: false },
@@ -14,6 +15,23 @@ function App() {
       reminder: false,
     },
   ]);
+
+  const [users, setUsers] = useState([]);
+  // a state variable for showing/unshowing the AddTask form...
+  const [showAddTask, setShowAddTask] = useState(false);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const res = await fetch("https://reqres.in/api/users");
+      const data = await res.json();
+      // console.log(data.data);
+
+      setUsers(data.data);
+    };
+
+    fetchData();
+  }, []);
+
   // Delete task function
 
   const deleteTask = (id) => {
@@ -34,7 +52,9 @@ function App() {
   // Now addTask function to add a task..this function will receive a new task and update the "tasks" array in our App component...
 
   const addTask = (task) => {
-    const id = tasks.length + 1;
+    // const id = tasks.length + 1;
+
+    const id = Math.floor(Math.random() * 10000) + 1;
     const newTask = { id, ...task };
 
     setTasks([...tasks, newTask]);
@@ -43,7 +63,13 @@ function App() {
   return (
     <>
       <div className="container">
-        <Header title="Todo List" />
+        <Header
+          title="Todo List"
+          onAdd={() => setShowAddTask(!showAddTask)}
+          showAdd={showAddTask}
+        />
+
+        {showAddTask && <AddTask onAdd={addTask} />}
 
         {tasks.length > 0 ? (
           <Tasks
@@ -54,8 +80,6 @@ function App() {
         ) : (
           "No tasks found"
         )}
-
-        <AddTask onAdd={addTask} />
       </div>
     </>
   );
