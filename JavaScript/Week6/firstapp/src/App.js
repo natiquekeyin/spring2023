@@ -5,16 +5,7 @@ import AddTask from "./components/AddTask";
 import { useState, useEffect } from "react";
 import Hooks from "./components/Hooks";
 function App() {
-  const [tasks, setTasks] = useState([
-    { id: 1, text: "Groceries", day: "June 9th at 1:00pm", reminder: false },
-    { id: 2, text: "Meeting", day: "June 19th at 12:00pm", reminder: true },
-    {
-      id: 3,
-      text: "Appointment with Mechanice",
-      day: "June 16th at 10:00am",
-      reminder: false,
-    },
-  ]);
+  const [tasks, setTasks] = useState([]);
 
   const [users, setUsers] = useState([]);
   // a state variable for showing/unshowing the AddTask form...
