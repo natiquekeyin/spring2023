@@ -31,3 +31,13 @@ How to deploy React Application?
 2. npm i -g serve
 3. serve -s build -p 8000
 4. npm install json-server
+5. "server": "json-server --watch db.json --port 5000" ADD TO PACKAGE.JSON IN SCRIPTS SECTION..
+
+1.DELETE
+2.POST
+3.PUT
+4.GET
+
+
+REACT ROUTER:
+

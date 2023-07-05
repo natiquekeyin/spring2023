@@ -12,29 +12,57 @@ function App() {
   const [showAddTask, setShowAddTask] = useState(false);
 
   useEffect(() => {
-    const fetchData = async () => {
-      const res = await fetch("https://reqres.in/api/users");
-      const data = await res.json();
-      // console.log(data.data);
-
-      setUsers(data.data);
+    const getTasks = async () => {
+      const tasksFromServer = await fetchTasks();
+      setTasks(tasksFromServer);
     };
 
-    fetchData();
+    getTasks();
   }, []);
+
+  //fetchTasks function..
+
+  const fetchTasks = async () => {
+    const res = await fetch("http://localhost:5000/tasks");
+    const data = await res.json();
+    return data;
+  };
+
+  // fetchTask...
+  const fetchTask = async (id) => {
+    const res = await fetch(`http://localhost:5000/tasks/${id}`);
+    const data = await res.json();
+    return data;
+  };
 
   // Delete task function
 
-  const deleteTask = (id) => {
+  const deleteTask = async (id) => {
+    await fetch(`http://localhost:5000/tasks/${id}`, { method: "DELETE" });
+
     setTasks(tasks.filter((task) => task.id !== id));
   };
 
   // Toggling reminder for tasks
 
-  const toggleReminder = (id) => {
+  const toggleReminder = async (id) => {
+    const taskToToggle = await fetchTask(id); //bring one task from tasks...
+    const updTask = { ...taskToToggle, reminder: !taskToToggle.reminder };
+    // updTask will take the taskToToggle and Just flip the reminder from its previous value
+
+    const res = await fetch(`http://localhost:5000/tasks/${id}`, {
+      method: "PUT",
+      headers: {
+        "Content-type": "application/json",
+      },
+      body: JSON.stringify(updTask),
+    });
+
+    const data = await res.json();
+
     setTasks(
       tasks.map((task) =>
-        task.id === id ? { ...task, reminder: !task.reminder } : task
+        task.id === id ? { ...task, reminder: data.reminder } : task
       )
     );
     // line 22 will match the id of the task "task.id" with provided id "id", if it matches.. it spreads out the current task and toggles the reminder value....if it does not matches... return that task without a change.....
@@ -42,13 +70,21 @@ function App() {
 
   // Now addTask function to add a task..this function will receive a new task and update the "tasks" array in our App component...
 
-  const addTask = (task) => {
-    // const id = tasks.length + 1;
+  const addTask = async (task) => {
+    const res = await fetch("http://localhost:5000/tasks", {
+      method: "POST",
+      headers: {
+        "Content-type": "application/json",
+      },
+      body: JSON.stringify(task),
+    });
+    // // const id = tasks.length + 1;
 
-    const id = Math.floor(Math.random() * 10000) + 1;
-    const newTask = { id, ...task };
+    // const id = Math.floor(Math.random() * 10000) + 1;
+    // const newTask = { id, ...task };
 
-    setTasks([...tasks, newTask]);
+    const data = await res.json();
+    setTasks([...tasks, data]);
   };
 
   return (
