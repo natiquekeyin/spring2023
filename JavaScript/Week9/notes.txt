@@ -40,4 +40,21 @@ How to deploy React Application?
 
 
 REACT ROUTER:
+ To create different routes in our react application we use "Router".
 
+ We need to install react-router-dom...
+ We need to import Router, Routes, Route..
+
+"/" is called home route/default route..
+"/about".. about path...
+
+We put everything related to Routing inside <Router> element...
+
+We put all routes inside <Routes> element....by using <Route> for each element.....
+
+Link should be used to link to the different routes of application, otherwise an anchor will produce a "refresh" page thing....
+
+
+Next Lecture:
+
+useLocation!

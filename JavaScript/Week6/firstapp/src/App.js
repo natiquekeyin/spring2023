@@ -3,7 +3,10 @@ import Header from "./components/Header";
 import Tasks from "./components/Tasks";
 import AddTask from "./components/AddTask";
 import { useState, useEffect } from "react";
+import Footer from "./components/Footer";
+import About from "./components/About";
 import Hooks from "./components/Hooks";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 function App() {
   const [tasks, setTasks] = useState([]);
 
@@ -88,7 +91,7 @@ function App() {
   };
 
   return (
-    <>
+    <Router>
       <div className="container">
         <Header
           title="Todo List"
@@ -96,19 +99,41 @@ function App() {
           showAdd={showAddTask}
         />
 
-        {showAddTask && <AddTask onAdd={addTask} />}
-
-        {tasks.length > 0 ? (
-          <Tasks
-            values={tasks}
-            onDelete={deleteTask}
-            onToggle={toggleReminder}
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <Link to="/tasks">Tasks</Link> <br />
+                <Link to="/about">About</Link> <br />
+                <Link to="/footer">Footer</Link>
+              </>
+            }
           />
-        ) : (
-          "No tasks found"
-        )}
+          <Route
+            path="/tasks"
+            element={
+              <>
+                {showAddTask && <AddTask onAdd={addTask} />}
+
+                {tasks.length > 0 ? (
+                  <Tasks
+                    values={tasks}
+                    onDelete={deleteTask}
+                    onToggle={toggleReminder}
+                  />
+                ) : (
+                  "No tasks found"
+                )}
+              </>
+            }
+          />
+
+          <Route path="/about" element={<About />} />
+        </Routes>
+        <Footer />
       </div>
-    </>
+    </Router>
   );
   // the above all is "jsx.."
 }

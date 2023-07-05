@@ -64,3 +64,8 @@ body {
 .task.reminder {
   border-left: 5px solid green;
 }
+
+footer {
+  margin-top: 20px;
+  text-align: center;
+}
