@@ -55,6 +55,12 @@ We put all routes inside <Routes> element....by using <Route> for each element..
 Link should be used to link to the different routes of application, otherwise an anchor will produce a "refresh" page thing....
 
 
-Next Lecture:
+Next Lecture: July 6,2023
 
-useLocation!
+We can access the defined routes by <a> anchor tag as well. It is highly recommended because and an anchor link produces a page refresh(a request to the server back...)
+<Link to="/contact">Contact us!</Link> it does not make a server request ...rather access it asynchronously...
+
+useLocation! gives us the handler to the current url location of application.
+"pathname" gives the current path where my application is on...
+
+useParams: we can access the parameters passed by the calling component by using useParams....

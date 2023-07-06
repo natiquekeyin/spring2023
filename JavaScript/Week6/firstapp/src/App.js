@@ -7,6 +7,9 @@ import Footer from "./components/Footer";
 import About from "./components/About";
 import Hooks from "./components/Hooks";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+
+import TaskDetails from "./components/TaskDetails";
+
 function App() {
   const [tasks, setTasks] = useState([]);
 
@@ -100,7 +103,7 @@ function App() {
         />
 
         <Routes>
-          <Route
+          {/* <Route
             path="/"
             element={
               <>
@@ -109,9 +112,9 @@ function App() {
                 <Link to="/footer">Footer</Link>
               </>
             }
-          />
+          /> */}
           <Route
-            path="/tasks"
+            path="/"
             element={
               <>
                 {showAddTask && <AddTask onAdd={addTask} />}
@@ -130,6 +133,7 @@ function App() {
           />
 
           <Route path="/about" element={<About />} />
+          <Route path="/task/:id" element={<TaskDetails />} />
         </Routes>
         <Footer />
       </div>

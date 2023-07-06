@@ -1,5 +1,6 @@
 import { FaTimes } from "react-icons/fa";
-
+import { Link } from "react-router-dom";
+import TaskDetails from "./TaskDetails";
 const Task = ({ task, onDelete, onToggle }) => {
   return (
     <div
@@ -15,7 +16,9 @@ const Task = ({ task, onDelete, onToggle }) => {
           onClick={() => onDelete(task.id)}
         />
       </h4>
-      <img src={task.avatar} alt="" />
+      <p>
+        <Link to={`/task/${task.id}`}>View Details</Link>
+      </p>
     </div>
   );
 };

@@ -69,3 +69,10 @@ footer {
   margin-top: 20px;
   text-align: center;
 }
+
+.taskD {
+  border: 1px solid blue;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+}
