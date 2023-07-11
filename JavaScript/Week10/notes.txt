@@ -1,0 +1,13 @@
+NEW PROJECT:
+
+We will be covering some NEW concepts along with practice of Olderones.
+
+We defined most of our state elements in App.js!
+
+App.js -> Tasks -> Task ..etc...
+
+App.js ->FeebackList -> FeedbackItem
+
+TO define state in a way that we DONT use App to transport the states to the different components... Global states that can be accessed by any of the components without passing it from App all the way to the component...
+
+Card is a component that will be used for styling purposes.. receving data and then displaying them in a particular style/design.
