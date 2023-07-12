@@ -1,10 +1,19 @@
 import Card from "./shared/Card";
-const FeedbackItem = ({ item }) => {
+import { FaTimes } from "react-icons/fa";
+const FeedbackItem = ({ item, handleDelete }) => {
   return (
-    <Card value="Hello">
-      <div>{item.rating}</div>
-      <div>{item.text}</div>
-    </Card>
+    <div className="card">
+      <div className="num-display">{item.rating}</div>
+      <button
+        className="close"
+        onClick={() => {
+          handleDelete(item.id);
+        }}
+      >
+        <FaTimes />
+      </button>
+      <div className="text-display">{item.text}</div>
+    </div>
   );
 };
 

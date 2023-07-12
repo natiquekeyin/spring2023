@@ -23,7 +23,55 @@ header {
 .card {
   background-color: white;
   color: black;
-  width: 500px;
+  width: 400px;
   border-radius: 10px;
   padding: 40px 50px;
+  position: relative;
+  margin: 20px;
+  font-weight: bolder;
+}
+
+.num-display {
+  background-color: #f3f31c;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  padding: 12px 0;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+}
+
+.feedback-stats {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+  align-items: center;
+  margin: 15px;
+}
+
+.close {
+  background: none;
+  border: none;
+  color: black;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid white;
+  padding: 8px 10px;
+  border-radius: 8px;
+  width: 400px;
+}
+
+input {
+  flex-grow: 2;
+  border: none;
+  font-size: 16px;
 }
