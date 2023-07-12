@@ -30,7 +30,7 @@ header {
   margin: 20px;
   font-weight: bolder;
 }
-
+.rating li,
 .num-display {
   background-color: #f3f31c;
   border-radius: 50%;
@@ -38,9 +38,28 @@ header {
   height: 50px;
   text-align: center;
   padding: 12px 0;
+  position: relative;
+  top: -10px;
+  left: -10px;
+  transition: 0.3s;
+}
+
+.num-display {
   position: absolute;
   top: -10px;
   left: -10px;
+}
+
+.rating li label {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  transform: translate(-50%, -50%);
 }
 
 .feedback-stats {
@@ -64,14 +83,63 @@ header {
 .input-group {
   display: flex;
   flex-direction: row;
-  border: 1px solid white;
+  border: 1px solid #ccc;
   padding: 8px 10px;
   border-radius: 8px;
-  width: 400px;
 }
 
 input {
   flex-grow: 2;
   border: none;
   font-size: 16px;
+}
+
+.btn {
+  border: 0;
+  border-radius: 8px;
+  width: 100px;
+  height: 40px;
+  color: black;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: #28536c;
+  color: white;
+}
+
+.btn-secondary {
+  background: #f3f31c;
+}
+
+.btn:disabled {
+  background-color: #cccccc;
+  color: #333;
+  cursor: auto;
+}
+
+.rating {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-around;
+  margin: 30px 0 40px;
+}
+
+[type="radio"] {
+  opacity: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+@media (max-width: 600px) {
+  .rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 30px 0 40px;
+  }
 }
