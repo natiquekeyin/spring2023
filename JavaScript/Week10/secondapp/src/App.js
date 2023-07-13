@@ -9,6 +9,15 @@ import FeedbackForm from "./components/FeedbackForm";
 function App() {
   const [feedback, setFeedback] = useState(FeedbackData);
 
+  // to add the feedback we need a function...
+
+  const addFeedback = (newFeedback) => {
+    newFeedback.id = feedback.length + 1;
+    setFeedback([newFeedback, ...feedback]);
+
+    // console.log("Add feedback here");
+  };
+
   const deleteFeedback = (id) => {
     if (window.confirm("Are you sure you want to delete the feedback?")) {
       setFeedback(feedback.filter((item) => item.id !== id));
@@ -18,7 +27,7 @@ function App() {
     <>
       <Header />
       <div className="container">
-        <FeedbackForm />
+        <FeedbackForm handleAdd={addFeedback} />
         <FeedbackStats feedback={feedback} />
         <FeedbackList feedback={feedback} handleDelete={deleteFeedback} />
       </div>
