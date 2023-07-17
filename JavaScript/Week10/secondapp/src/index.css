@@ -70,6 +70,7 @@ header {
   margin: 15px;
 }
 
+.edit,
 .close {
   background: none;
   border: none;
@@ -78,6 +79,10 @@ header {
   position: absolute;
   top: 10px;
   right: 15px;
+}
+
+.edit {
+  right: 35px;
 }
 
 .input-group {

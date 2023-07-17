@@ -1,0 +1,9 @@
+Week11: July 17,2023:
+
+Context:
+It provides a way to pass data through the component tree without having to pass props down manually at every level...
+
+Don't need to define everything in App rather... define centrally ..and access whtem when needeed...
+
+We defined "FeedbackContext.js"... where we have defined the <Feedback.Provider>..that keeps all the value of the globals states and we can access these states in any component by importing the FeedbackContext file and applying it ast context..
+const{value} = useContext(FeedbackContext);
