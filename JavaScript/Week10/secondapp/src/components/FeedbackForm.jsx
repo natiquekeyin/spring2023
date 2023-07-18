@@ -1,5 +1,5 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Button from "./shared/Button";
 import RatingSelect from "./RatingSelect";
 import { useContext } from "react";
@@ -12,7 +12,18 @@ const FeedbackForm = () => {
   const [rating, setRating] = useState(1);
   const [btnDisabled, setBtnDisabled] = useState(true);
 
-  const { addFeedback } = useContext(FeedbackContext);
+  const { addFeedback, feedbackEdit, updateFeedback } =
+    useContext(FeedbackContext);
+
+  useEffect(() => {
+    // console.log("hello");
+    if (feedbackEdit.edit === true) {
+      setBtnDisabled(false);
+      setText(feedbackEdit.item.text);
+      setRating(feedbackEdit.item.rating);
+    }
+  }, [feedbackEdit]);
+
   const handleSubmit = (e) => {
     e.preventDefault();
     // console.log("Form submitted");
@@ -21,7 +32,13 @@ const FeedbackForm = () => {
         text,
         rating,
       };
-      addFeedback(newFeedback);
+
+      if (feedbackEdit.edit === true) {
+        updateFeedback(feedbackEdit.item.id, newFeedback);
+        setText("");
+      } else {
+        addFeedback(newFeedback);
+      }
     }
 
     setText("");
