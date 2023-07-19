@@ -80,7 +80,7 @@ RTL:
 
 RTL Philosophy:
 
-"The more your tests resember the way your software is used, the more confidence they can give you"
+"The more your tests resembel the way your software is used, the more confidence they can give you"
 
 RTL will not care if you add 4+4 or 5+3 to display a number 8.. IT WILL BE CONCERNED WITH 8 ONLY..
 
@@ -102,3 +102,11 @@ if (actual !== expected) {
 What we need to write tests in React:
 i) node js (YES)
 ii) git (?)
+
+npm: node package manager! It provides out-of-box support for RTL and as well as support for Jest..
+
+"@testing-library/react": "^13.4.0", PACKAGE.JSON..
+MOST OF THE SUPPORT FOR JEST AND RTL IS ALREADY AVAILABLE TO US...
+
+
+test(name,fn,timeout)
