@@ -1,0 +1,104 @@
+Testing
+
+ As a developer, our primary goal is to build software that works!
+ To ensure our software really works, WE TEST THE APPLICATION
+ We check if our software works as expected!!
+
+Manual Testing:
+
+Someone will open the website, interact with it(in all possible ways) and ensure everything is working as intended
+
+If a new feature is released, you repeat the same steps!
+
+You may have to test not only the new feature but also existing features..
+
+Problems in Manual Testing:
+i) Time consuming
+ii) Complex repetitive tasks have a risk of human error
+iii) In larger applications, we might not be able to test ALL the features that should be tested...
+
+Automated Testing:
+ Automated tests are the programs that automate the task of testing the software!
+
+ Write code to test the software code..
+
+ Additional effort is required when you develop a feature
+
+ Advantages of Automated tests:
+
+ i) Not time consuming
+ ii) Reliable, consistent and not error prone
+ iii) Easy to identify and fix features that break tests...
+ iv) Gives confidence when shipping software ..
+
+
+Jest (JavaScript testing framework) & RTL (React Testing Library)
+
+Jest:
+ is a javascript testing framework..
+ is a test runner that finds tests, run the test, determines where the tests are passed or failed and reports it back in a human readable manner...
+
+RTL:
+ Javascript testing utility that provided "virtual DOM" for testing React compnents.[imitates the react-DOM and works with that..]
+
+ RTL provides a virtual DOM which we can use to interact and verify the behaviour of a react component...
+ 
+ RTL is infact a family of packages which help test UI Components..
+
+ The core library is called "DOM Testing Library" and RTL is simply a wrapper around the core library to test React appications in an easir way...
+
+ Types of Tests:
+  1. Unit tests
+  2. Integration Tests
+  3. End to End Tests
+
+  Unit Tests:
+  Focus is on testing an individual building blocks of an application, such as a class or a function or a component..
+
+  Each unit or building block is tested in isolation, independent of other units..
+
+  Dependencies are mocked!
+
+  Run in a short amount of time and make it very easy to pinpoint failures..
+
+  Relatively easier to write and maintain...
+
+  Integration Tests:
+  
+  Focus is on testing a combination of units and ensuring they work together.
+  Take longer than unit tests.
+
+  End to End Tests (E2E Tests):
+
+  Focus is on testing the entire application flow and ensuring it works as designed from start to finish..
+
+  Invovlves in a real UI, a real backend datatabase, real services etc.
+
+  Take the longest as the cover the most amount of code...
+
+  Have a cost implication as we might interact with real APIs (paid) may charge based on the number of request..
+
+RTL Philosophy:
+
+"The more your tests resember the way your software is used, the more confidence they can give you"
+
+RTL will not care if you add 4+4 or 5+3 to display a number 8.. IT WILL BE CONCERNED WITH 8 ONLY..
+
+WHAT IS A TEST?
+
+
+const addPeriod = (s) => {
+  return `${s}.`;
+};
+
+const actual = addPeriod("Hello world");
+const expected = "Hello world.";
+
+if (actual !== expected) {
+  throw new Error(`Test not passed`);
+}
+
+
+What we need to write tests in React:
+i) node js (YES)
+ii) git (?)
