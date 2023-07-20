@@ -131,3 +131,13 @@ Test Driven Development (TDD):
   Jest Watch Mode:
     Watch mode is an option that we can pass to jest asking to watch files that have changed since the last commit and exectue the test related only to those changed files....
 
+
+1 suite is actually 1 file.
+
+Filtering of tests:
+o for only run tests reated to changed files...
+
+
+Grouping the tests:
+
+describe(name,()=>{})
