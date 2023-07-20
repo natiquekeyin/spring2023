@@ -50,7 +50,7 @@ RTL:
  Types of Tests:
   1. Unit tests
   2. Integration Tests
-  3. End to End Tests
+  3. End to End Tests(e2e)
 
   Unit Tests:
   Focus is on testing an individual building blocks of an application, such as a class or a function or a component..
@@ -109,4 +109,25 @@ npm: node package manager! It provides out-of-box support for RTL and as well as
 MOST OF THE SUPPORT FOR JEST AND RTL IS ALREADY AVAILABLE TO US...
 
 
-test(name,fn,timeout)
+test(name,fn,timeout*)
+
+
+npm run test ... tests are run in "Watch" mode. 
+
+It keeps an eye on all the changed files that have not been committed, and it runs all the tests from them....
+
+Test Driven Development (TDD):
+  TDD is a sofrware development process where you write tests before writing the software code. 
+
+  Once the tests have been written, you then write the code to ensure the tests pass.
+
+  1. Create tests that verify the functionality of a specific feature
+  2. Write software code that will run the tests successfully when re-executed.
+  3. Refactor the code for optimization while ensuring the tests continue to pass.
+
+  Also called red-green testing as all tests go from a red failed state to a green passed state..
+
+
+  Jest Watch Mode:
+    Watch mode is an option that we can pass to jest asking to watch files that have changed since the last commit and exectue the test related only to those changed files....
+
