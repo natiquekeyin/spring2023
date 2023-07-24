@@ -1,0 +1,57 @@
+July 24,2023: Secibd Part of the lecture:
+
+Assertions:When writing tests, we often need to check that values meet certain conditions.. assertions decide if a test passes or fails..
+
+expect()... assertion..
+The argument should be the value that your code produces...
+Typically, you will use expect with a "matcher" function to assert somethign about a value...
+A matcher can optionally accept an argument which is the expected value...
+
+expect(element).toBeInTheDocument();
+
+
+WHAT TO TEST?
+    Test component renders
+    Test compnent renders with props
+    Test component renders in different states
+    Test component reacts to events...
+
+WHAT NOT TO TEST?
+    Implementation details..
+    Third pary code.
+    Code that is not important from a user point of view...
+
+RTL Queries:[querySelector, getElementByID in DOM in HTML??]
+ Every test we write generally involves the followiong basic steps:
+    i)Render the component
+    ii) Find an elment rendered by the compnent..
+    iii) Assert against the element found in step 2 which will pass or fail the test...
+
+    Queries are the methnods that Testing Libray provides to find elements on the page...
+    To find a single element on the page, 
+        i) getBy..
+        ii)queryBy..
+        ii)findBy..
+    To find multiple elements on the page, 
+        i)getAllBy..
+        ii)queryAllBy..
+        iii)findAllBy..
+
+        .. represent the subffix that can be one of the Role,LabelText,PlaceHolderText,Text,DisplayValue,AltText,Title and TestId.
+
+        getByText() we have used this one a lot...
+    
+    getByRole()
+        it queries for elements with the given role..
+
+        Role refers to the ARIA(Accessible Rich Internet Applications) role which provides semantic meaning to the content to ensure people using assistive technologies are able to use them....
+
+        By default many semantic element sin HTML have a role...
+        
+        Button element has a "button" role.
+        anchor elmeent has a "link" role.
+        h1 to h6 have a "heading" role...
+        checkboxes have a "checkbox" role..
+        radio buttons have a "radio" role...
+
+        <a role="button">... any element if we add this... button role is attached that particular element....

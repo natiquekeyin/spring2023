@@ -141,3 +141,24 @@ o for only run tests reated to changed files...
 Grouping the tests:
 
 describe(name,()=>{})
+
+July 24,2023: First Part of the lecture:
+
+Filename conventions:
+1. Files with .test.js or .test.jsx suffix.
+2. Files with .spec.js or .spec.jsx suffix.
+3. Files with .js or .jsx suffix in __tests__ folders.
+
+test( ) === .it( )
+
+test.only() === fit()
+
+test.skip() === xit()
+
+Code Coverage:
+
+A metric that can help to understand how much of your software code is tested..
+  i) Statement Coverage: how many of the statements in the software code have been executed.
+  ii)Branches coverage: how many of the branches of the control structure(if statments for instance) have been executed.
+  iii)Function coverage: how many of thye functions defined hav ebeen called ..
+  iv)Line coverage: how many of lines of source cod ehave been tested...
