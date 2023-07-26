@@ -15,6 +15,7 @@ function App() {
           <FeedbackStats />
           <FeedbackList />
         </div>
+        Learn React
       </>
     </FeedbackProvider>
   );

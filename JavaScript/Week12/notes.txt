@@ -57,3 +57,5 @@ RTL Queries:[querySelector, getElementByID in DOM in HTML??]
         <a role="button">... any element if we add this... button role is attached that particular element....
 
 Slide no.6 of Week12 ppt.
+
+Lecture of July 26:
