@@ -5,6 +5,8 @@ const Greet = () => {
     <>
       <h1>The greet form</h1>
       <h2>Enter your name</h2>
+      <p data-testid="para">THis is a paragraph</p>
+      <div>Hello world</div>
       <form>
         <div>
           <label htmlFor="comment">Comment</label>

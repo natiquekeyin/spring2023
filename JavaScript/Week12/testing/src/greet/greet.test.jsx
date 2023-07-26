@@ -39,5 +39,23 @@ describe("Greet Form", () => {
 
     const nameElement4 = screen.getByDisplayValue("keyin");
     expect(nameElement4).toBeInTheDocument();
+
+    const paraElement = screen.getByTestId("para");
+    expect(paraElement).toBeInTheDocument();
+
+    const helloText = screen.getByText("hello world", { exact: false });
+    // exact:false can be used i) substring search
+    // exact:false can also be used for ignore case..
+    expect(helloText).toBeInTheDocument();
+
+    const helloText2 = screen.getByText(/^hello world$/i);
+    // /World/ it will make a substring search
+    // exact:false can also be used for ignore case..
+    expect(helloText2).toBeInTheDocument();
+
+    const helloText3 = screen.getByText((content) => content.endsWith("world"));
+    // /World/ it will make a substring search
+    // exact:false can also be used for ignore case..
+    expect(helloText3).toBeInTheDocument();
   });
 });
