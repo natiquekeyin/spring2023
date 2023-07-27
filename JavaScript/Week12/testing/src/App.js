@@ -1,12 +1,14 @@
 import logo from "./logo.svg";
 import "./App.css";
 import Skills from "./skills/Skills";
+import Event from "./myevents/Event";
 
 function App() {
   const skills = ["a", "b", "c"];
   return (
-    <div className="App">
-      <Skills skills={skills} />
+    <div>
+      {/* <Skills skills={skills} /> */}
+      <Event />
     </div>
   );
 }
