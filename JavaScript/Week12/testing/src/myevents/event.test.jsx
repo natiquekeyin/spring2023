@@ -28,5 +28,14 @@ describe("Event", () => {
     expect(countElement).toHaveTextContent(/^1$/);
   });
 
-  test("renders a count of 2 after clicking the icrment button twice", () => {});
+  test("renders a count of 2 after clicking the icrment button twice", async () => {
+    user.setup();
+    render(<Event />);
+    const incrementButton = screen.getByRole("button", { name: "Increment" });
+    await user.click(incrementButton);
+    await user.click(incrementButton);
+
+    const countElement = screen.getByRole("heading");
+    expect(countElement).toHaveTextContent(/^1$/);
+  });
 });
