@@ -58,4 +58,13 @@ RTL Queries:[querySelector, getElementByID in DOM in HTML??]
 
 Slide no.6 of Week12 ppt.
 
-Lecture of July 26:
+After Week12 slides:
+
+clear():
+
+await user.clear(screen.getByRole('textbox'));
+expect(screen.getByRole('textbox')).toHaveValue("");
+
+selectOptios():
+await user.selectOptions(screen.getByRole("listbox"),[]);
+expect((screen.getByRole('option',{name:"A"}).toBe(true)));

@@ -1,0 +1,14 @@
+
+makeJuice; 
+
+void makeJuice(void); // makeJuice does not accept any parameters, and does not either return anything
+
+void makeJuice(apples); // it accepts apples as para .. and returns nothing...
+
+juice makeJuice();// miracle function :) ...a function that does not accept anything but returns juice...
+
+int add (int , int); // add accepts two integers, and returns one integer...[ the return is NOT INCLUDED in the signature...]
+
+int add(int); // accpts 1 integer and returns 1 integer...
+
+void add(int); // 
