@@ -12,3 +12,10 @@ int add (int , int); // add accepts two integers, and returns one integer...[ th
 int add(int); // accpts 1 integer and returns 1 integer...
 
 void add(int); // 
+
+
+render function is for Component testing
+renderHook will be used for custom hooks testing...
+
+
+act( ) ... in tests... act() ...Self study...
